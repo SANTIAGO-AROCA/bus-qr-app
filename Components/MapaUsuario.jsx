@@ -26,6 +26,7 @@ export default function MapaUsuario({ busLocation }) {
       center={[busLocation.lat, busLocation.lng]}
       zoom={12}
       scrollWheelZoom={true}
+      
       className="h-full w-full"
     >
       <TileLayer

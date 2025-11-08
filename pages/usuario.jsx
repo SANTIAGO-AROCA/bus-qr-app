@@ -2,10 +2,10 @@
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 
-const MapWithNoSSR = dynamic(() => import("../components/mapausuario"), {
+// CAMBIA ESTA LÍNEA - Usa Components con C mayúscula
+const MapWithNoSSR = dynamic(() => import("../Components/MapaUsuario"), {
   ssr: false,
 });
-
 
 export default function UsuarioPage() {
   const [busLocation, setBusLocation] = useState({

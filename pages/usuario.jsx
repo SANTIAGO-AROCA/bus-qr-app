@@ -2,7 +2,7 @@
 import dynamic from "next/dynamic";
 import { useState, useEffect } from "react";
 
-const MapWithNoSSR = dynamic(() => import("../components/MapaUsuario"), {
+const MapWithNoSSR = dynamic(() => import("../components/MapaUsuario.jsx"), {
   ssr: false,
 });
 
